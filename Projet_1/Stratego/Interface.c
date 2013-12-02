@@ -12,4 +12,4 @@ typedef struct Joueur{
 	int camp ; // blue ou rouge, pareil que les pions donc utiliser une enum;
 }Joueur ;
 
-typedef Pion Terrain[10][10]; // chaque case contient un pointeur vers un pion, case vide = NULL
+typedef Pion* Terrain[10][10]; // chaque case contient un pointeur vers un pion, case vide = NULL
