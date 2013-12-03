@@ -28,3 +28,6 @@ typedef Pion* Terrain[10][10]; // chaque case contient un pointeur vers un pion,
 void IAInitialisation(); //initialise les champs de l'IA
 int IASelectionnerMouvement(Terrain t, Joueur j, Mouvement m); //Sélectionne le mouvement le plus opportun en fonction du terrain et du joueur.
 void IADetruire();
+
+//Pas de méthode Jouer() CAR le role de l'IA n'est pas de JOUER mais de prendre la MEILLEURE decision (= meilleur mouvement).
+//Pas de méthode concernant l'adversaire puisque géré par la structure joueur->decouverts
